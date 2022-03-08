@@ -11,6 +11,8 @@ beautifulsoup4 = "*"
 pylint = "*"
 selenium = "*"
 pymongo = "*"
+pytest = "*"
+apache-airflow = "==2.1.2"
 
 [dev-packages]
 
