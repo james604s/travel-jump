@@ -114,7 +114,8 @@ crawler_activities_list = PythonOperator(
         "headers": HEADERS,
         "item_id": "activity",
         "page_size": 24,
-        "dt_today": dt_today
+        "dt_today": dt_today,
+        # "dt_today": "{{ execution_date | ds }}"
     },
     dag = dag
 )
