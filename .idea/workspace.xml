@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ad9766-7191-47b5-bf5d-d211fcd84847" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/dags/test_activities_dag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/dags/test_dag_integrity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dags/activities_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/activities_dag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dags/crawler_scripts/klook_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/crawler_scripts/klook_crawler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

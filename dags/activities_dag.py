@@ -34,6 +34,13 @@ def _check_mongo_conn(**kwargs):
     m_client.close()
     return 0
 
+def _check_source_conn(**kwargs):
+    import requests
+    url = kwargs.get("url", None)
+    headers = kwargs.get("headers", None)
+    res = requests.get(url, headers=headers)
+    res.raise_for_status()
+
 def _create_schema_if_not_exists(**kwargs):
     """
     desc:
@@ -96,9 +103,14 @@ check_mongo_conn = PythonOperator(
     dag = dag
 )
 
-check_source_conn = DummyOperator(
+check_source_conn = PythonOperator(
     task_id = "check_source_conn",
-    dag=dag
+    python_callable = _check_source_conn,
+    op_kwargs={
+        "url": ACTIVITIES_URL,
+        "headers": HEADERS,
+    },
+    dag = dag
 )
 
 create_schema_if_not_exists = PythonOperator(
