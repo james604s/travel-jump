@@ -84,7 +84,7 @@ default_args = {
 
 dag = DAG('klook_activities',
           start_date=datetime(2022,3,1),
-          schedule_interval="@daily",
+          schedule_interval="0 4 * * *",
           tags=["klook", "crawler", "activities"],
           default_args=default_args,
           catchup=False)
