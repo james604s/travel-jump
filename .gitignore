@@ -17,4 +17,6 @@ logs
 #
 .idea
 
+#py
+test_activities_dag.py
 
