@@ -14,4 +14,7 @@ pip-delete-this-directory.txt
 # Airflow
 logs
 
+#
+.idea
+
 
