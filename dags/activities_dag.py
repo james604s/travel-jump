@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.dummy import DummyOperator
+# sys.path.extend([os.getcwd(),os.getcwd()+"/crawler_scripts"])
 from crawler_scripts.klook_crawler import (
     _crawler_activities_list,
     _crawler_activities_rating_info

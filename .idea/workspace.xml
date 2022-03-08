@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ad9766-7191-47b5-bf5d-d211fcd84847" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/dags/test_activities_dag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/dags/test_dag_integrity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/activities_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/activities_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/crawler_scripts/klook_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/crawler_scripts/klook_crawler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.google.cloudcode.ide_session_index" value="20220308_0004" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/dags" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,10 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/dags" />
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/travel-jump-docker-dev" />
       <recent name="$PROJECT_DIR$/travel-jump-docker-official" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bk" />
