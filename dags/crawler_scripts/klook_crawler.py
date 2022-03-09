@@ -58,14 +58,9 @@ def _crawler_activities_list(**kwargs):
         time.sleep(5)
     print(activities_list)
 
-    from pymongo import MongoClient
-    m_client = MongoClient("mongodb://mongodb:mongodb123@mongodb:27017/")
-    db = m_client['travel-jump']
-    db_col = db["activities_list"]
-    db_col.insert_many(activities_list)
-    print("mongodb insert successful!")
-    m_client.close()
-
+    from db.mongodb import MongoOperation
+    m_client = MongoOperation(conn_id = "mongo_travel_jump")
+    m_client.mongo_insert_many(activities_list, activities_list)
     return activities_id_list
 
 def _crawler_activities_rating_info(**kwargs):
@@ -98,11 +93,7 @@ def _crawler_activities_rating_info(**kwargs):
                 item_list.extend(res_json['result']['item'])
                 time.sleep(random.randint(3,15))
 
-    from pymongo import MongoClient
-    m_client = MongoClient("mongodb://mongodb:mongodb123@mongodb:27017/")
-    db = m_client['travel-jump']
-    db_col = db["activities_rating_info"]
-    db_col.insert_many(item_list)
-    print("mongodb insert successful!")
-    m_client.close()
+    from db.mongodb import MongoOperation
+    m_client = MongoOperation(conn_id = "mongo_travel_jump")
+    m_client.mongo_insert_many("activities_rating_info", item_list)
     # return item_list
